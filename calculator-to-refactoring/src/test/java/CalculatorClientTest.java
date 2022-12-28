@@ -1,16 +1,15 @@
-import com.fp.codingdojo.calculator.StringCalculator;
+import com.fp.codingdojo.calculator.CalculatorClient;
 import org.junit.Test;
 
 import static org.junit.Assert.assertEquals;
 
 
-public class StringCalculatorTest {
+public class CalculatorClientTest {
     @Test
     public void returnZeroForEmptyString() {
         // given
-
         // when
-        String result = StringCalculator.sum(new String[]{""});
+        String result = CalculatorClient.bla(new String[]{""});
 
         // then
         assertEquals("0", result);
@@ -21,7 +20,7 @@ public class StringCalculatorTest {
         // given
 
         // when
-        String result = StringCalculator.sum(new String[]{"1"});
+        String result = CalculatorClient.bla(new String[]{"1"});
 
         // then
         assertEquals("1", result);
@@ -32,7 +31,7 @@ public class StringCalculatorTest {
         // given
 
         // when
-        String result = StringCalculator.sum(new String[]{"1,2"});
+        String result = CalculatorClient.bla(new String[]{"1,2"});
 
         // then
         assertEquals("3", result);
@@ -43,7 +42,7 @@ public class StringCalculatorTest {
         // given
 
         // when
-        String result = StringCalculator.sum(new String[]{"5,6,7"});
+        String result = CalculatorClient.bla(new String[]{"5,6,7"});
 
         // then
         assertEquals("18", result);
@@ -54,7 +53,7 @@ public class StringCalculatorTest {
         // given
 
         // when
-        String result = StringCalculator.sum(new String[]{"5,6\n7,8\n9,10"});
+        String result = CalculatorClient.bla(new String[]{"5,6\n7,8\n9,10"});
 
         // then
         assertEquals("45", result);
